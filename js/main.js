@@ -1,56 +1,97 @@
-// ### 1. let nombre = 8.56
+// - ## Créer une variable qui reçois un array avec 3 éléments -> ex: coding 11, coding 12, coding 13
 
-let nombre = 8.56
-
-// ### 2.  Arrondir au nombre à l'entier le plus proche
-
-console.log(Math.round(nombre));
-
-// ### 3.  Arrondir à l'entier vers le haut
-
-console.log(Math.ceil(nombre));
-// ### 4.  Arrondir à l'entier vers le bas
-
-console.log(Math.floor(nombre));
-
-// ### 5.  Enlever toute la partie décimale
-
-console.log(Math.trunc(nombre));
-
-// ### 6.  Afficher un nombre aléatoire entre 0-1
-
-let random = Math.round(Math.random());
-console.log(random);
-
-// ### 7.  Afficher un nombre aléatoire entre 0-100
-
-let random2 = Math.random()*100;
-console.log(random2);
-
-// ### 8.  Afficher un nombre entier aléatoire entre 0-100
-
-let random3 = Math.round(Math.random()*100);
-console.log(random3);
-
-// ### 9.  Afficher 8 puissance 2
-
-console.log(Math.pow(8,2));
-
-// ### 10.  Afficher racine carré de 9
+let coding = ["coding 11", "coding 12", "coding 13" ];
 
 
-console.log(Math.sqrt(9));
+// - ##  Afficher les éléments de l'array
 
-// ### 11.  Afficher la valeur absolue de -1
+console.log(coding);
 
-console.log(Math.abs(-1));
+// - ## Afficher le nombre d'éléments de l'array
 
-// ### 12.  Afficher la valeur la plus grande parmi -2, 1000, 8, 57
+console.log(coding.length);
 
-console.log(-2,1000,8,57);
-console.log(Math.max(-2,1000,8,57));
+// - ## Afficher les éléments de l'array 1 par 1
 
-// ### 13.  Afficher la valeur la plus petite parmi -2, 1000, 8, 57
+console.log(coding[0]);
+console.log(coding[1]);
+console.log(coding[2]);
 
-console.log(-2,1000,8,57);
-console.log(Math.min(-2,1000,8,57));
+// # Exercice 2 JavaScript -> Array
+
+//     - ## Créer une variable qui reçois un array avec 3 éléments -> ex: coding 11, coding 12, coding 13
+
+let coding2 = ["coding 17", "coding 18", "coding 19"];
+
+//     - ## Afficher les éléments de l'array
+
+console.log(coding2);
+
+//     - ## Ajouter et afficher votre prénom a l'array
+
+coding2.push("Nasila");
+console.log(coding2);
+
+// - # Exercice 3 JavaScript -> Array
+
+//     - ## Créer une variable qui reçois un array avec 3 éléments -> ex: coding 11, coding 12, coding 13
+
+let coding3 = ["coding 20", "coding 21", "coding 22"];
+
+
+//     - ## Afficher les éléments de l'array
+
+console.log(coding3);
+
+
+//     - ## Ajouter derrière et afficher votre prenom a l'array
+
+coding3.push("Nasila");
+console.log(coding3);
+
+// ajouter devant
+
+coding3.unshift("Nasila");
+console.log(coding3);
+
+//     - ## Remplacer et afficher un élément de l'array par autre chose
+
+coding3.splice(1,1,"Wesh bien ou bien");
+console.log(coding3)
+
+
+// - # Exercice 4 JavaScript -> Array
+
+//     - ## Créer une variable qui reçois un array avec 3 éléments -> ex: coding 11, coding 12, coding 13
+
+let fruits = ["topinambour", "legume", "tbete"];
+
+
+//     - ## Afficher les éléments de l'array
+
+console.log(fruits);
+
+//     - ## Ajouter et afficher votre prenom a l'array
+// (push au debut)
+fruits.push("Aala");
+console.log(fruits);
+
+//     - ## Remplacer et afficher un élément de l'array par autre chose
+
+fruits.splice(1,1,"Tonpere");
+console.log(fruits);
+
+// ou pour remplacer le dernier element du tableau : 
+
+fruits.splice(fruits.length-1,1,"youuuhou");
+console.log(fruits);
+
+
+
+//     - ## Effacer un élément de l'array
+
+fruits.pop();
+
+//     - ## Afficher le contenu le d'array
+
+console.log(fruits);
